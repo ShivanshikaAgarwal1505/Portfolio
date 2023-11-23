@@ -1,26 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@100&display=swap');
 :root{
-    --background: #2a2a2a;
-    --secondary:#161616;
-    --text: #cacaca;
+    --background: #07161b;
+    --secondary:#3d737f;
+    --text: #cec7bf;
 }
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: var(--background);
-    color: var(--text);
+    
 }
 body{
     font-family: 'Exo', sans-serif;
+    background-color: var(--background);
+        color: var(--text);
 }
 
 #logo{
     background-image: linear-gradient(--text, #f0d1d1);
     width: fit-content;
     font-size: 3rem;
-    /* font-weight: bolder; */
-    stroke-width: 3rem;
+    font-weight: 900;
+    margin: 10px 20px;
 }
 .navbar-toggler{
     margin: 10px 20px;
@@ -129,13 +130,14 @@ body{
     transition: transform .55s cubic-bezier(0, .35, 0, 1), background-color .15s ease-out .1s;
 }
 .nav-item:hover a{
-    background-color: var(--secondary);
+    background-color: var(--text);
+    color: var(--secondary);
 }
 
 .card {
     width: fit-content;
     height: fit-content;
-    background-color: var(--secondary);
+    background-color: #050a0c;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -149,7 +151,8 @@ body{
 .socialContainer {
     width: 30px;
     height: 30px;
-    /* background-color: var(--secondary); */
+    background-color: transparent;
+    background: none;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -188,6 +191,7 @@ body{
 
 .socialSvg {
     width: 17px;
+    background: transparent;
 }
 
 .socialSvg path {
@@ -208,4 +212,30 @@ body{
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+#blob1{
+    width: 25vw;
+    height: 25vh;
+    z-index: 0;
+}
+#name{
+    z-index: 1;
+    color: var(--background);
+    margin: -17vh 11vh;
+    font-size: 4rem;
+    font-weight: 1000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    background: transparent;
+}
+#name2{
+    z-index: 1;
+        color: var(--text);
+        /* margin: -17vh 11vh; */
+        font-size: 4rem;
+        font-weight: 1000;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        background: transparent;
 }
