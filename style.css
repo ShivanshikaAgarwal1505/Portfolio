@@ -214,28 +214,11 @@ body{
     }
 }
 
-#blob1{
-    width: 25vw;
-    height: 25vh;
-    z-index: 0;
-}
-#name{
-    z-index: 1;
-    color: var(--background);
-    margin: -17vh 11vh;
-    font-size: 4rem;
-    font-weight: 1000;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: absolute;
-    background: transparent;
-}
 #name2{
-    z-index: 1;
         color: var(--text);
-        /* margin: -17vh 11vh; */
+        margin-left: 2%;
         font-size: 4rem;
         font-weight: 1000;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        position: absolute;
         background: transparent;
 }
