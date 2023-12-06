@@ -15,13 +15,14 @@ body{
     background-color: var(--background);
     color: var(--text);
     font-size: large;
+    font-weight: bold;
 }
-
+/* nav */
 #logo{
     background-image: linear-gradient(--text, #f0d1d1);
     width: fit-content;
     font-size: 3rem;
-    font-weight: 900;
+    font-weight: bolder;
     margin: 10px 20px;
 }
 .navbar-toggler{
@@ -134,7 +135,8 @@ body{
     background-color: var(--text);
     color: var(--secondary);
 }
-
+/* end nav */
+/* contact card */
 .card {
     width: fit-content;
     height: fit-content;
@@ -214,7 +216,16 @@ body{
         opacity: 1;
     }
 }
-
+/* ebd contact card */
+#tab1{
+    height: 85vh;
+    background-image: url("./Asset/jefferson-santos-9SoCnyQmkzI-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   padding-top: 20vh;
+}
+/* nave animation */
 #name2{
         color: var(--text);
         margin-left: 2%;
@@ -227,8 +238,10 @@ body{
  .txt-type>.txt {
      border-right: 0.2rem solid #777;
  }
+ 
  .bdy >span{
     display: flex;
     justify-content: center;
     align-items: center;
  }
+ /* end nave animation */
