@@ -18,8 +18,11 @@ body{
     font-weight: bold;
 }
 /* nav */
+nav{
+    background-color: #07161bc4;
+}
 #logo{
-    background-image: linear-gradient(--text, #f0d1d1);
+    /* background-image: linear-gradient(--text, #f0d1d1); */
     width: fit-content;
     font-size: 3rem;
     font-weight: bolder;
@@ -245,3 +248,6 @@ body{
     align-items: center;
  }
  /* end nave animation */
+ .img{
+    box-shadow: 0 0 10px 0 #808080;
+ }
