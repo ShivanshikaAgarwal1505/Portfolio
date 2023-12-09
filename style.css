@@ -245,6 +245,26 @@ nav{
     align-items: center;
  }
  /* end nave animation */
+ #dot{
+    width: 15px;
+    height: 15px;
+    background-color: var(--text);
+    display: inline-block;
+    margin-left: 9px;
+    border-radius: 50%;
+    animation: flap-wings 1s infinite ease-in-out;
+ }
+ @keyframes flap-wings {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
 /* card */
 .card1 {
     width: 285px;
@@ -261,8 +281,8 @@ nav{
 }
 
 .img {
-    height: 50%;
-    width: 40%;
+    height: 170px;
+    width: 200px;
     position: absolute;
     transition: 0.2s ease-in-out;
     z-index: 1;
