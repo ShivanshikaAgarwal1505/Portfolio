@@ -14,7 +14,7 @@
      this.wait = parseInt(wait, 8);
      this.type();
      this.isDeleting = false;
-   }
+   } 
 
    type() {
      // Current index of word
@@ -74,4 +74,4 @@
    new TypeWriter(txtElement, words, wait);
  }
 
- 
+ AOS.init();
