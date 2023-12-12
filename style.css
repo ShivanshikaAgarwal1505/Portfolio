@@ -21,7 +21,7 @@ body{
 nav{
     background-color: #07161bc4;
 }
-#logo{
+#logo{ 
     /* background-image: linear-gradient(--text, #f0d1d1); */
     width: fit-content;
     font-size: 3rem;
@@ -255,7 +255,7 @@ nav{
     border-radius: 50%;
     animation: flap-wings 1s infinite ease-in-out;
  }
- @keyframes flap-wings {
+ @keyframes flap-wings { 
 
     0%,
     100% {
@@ -340,4 +340,82 @@ nav{
 
 .card1:hover {
     transform: scale(1.04) rotate(-1deg);
+}
+/* achivement card */
+.card3 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #e8e8e8;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.content .heading {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.content .para {
+    line-height: 1.5;
+}
+
+.content .btn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: var(--secondary);
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card3::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: var(--secondary);
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card3:hover::before {
+    height: 100%;
+}
+
+.card3:hover {
+    box-shadow: none;
+}
+
+.card3:hover .btn {
+    color: #212121;
+    background: #e8e8e8;
+}
+
+.content .btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #e8e8e8;
+}
+
+.content .btn:active {
+    box-shadow: none;
 }

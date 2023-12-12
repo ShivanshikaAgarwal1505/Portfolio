@@ -74,4 +74,4 @@
    new TypeWriter(txtElement, words, wait);
  }
 
- AOS.init();
+ AOS.init();  
