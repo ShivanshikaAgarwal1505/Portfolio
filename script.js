@@ -15,7 +15,7 @@
      this.type();
      this.isDeleting = false;
    } 
-
+ 
    type() {
      // Current index of word
      const current = this.wordIndex % this.words.length;
