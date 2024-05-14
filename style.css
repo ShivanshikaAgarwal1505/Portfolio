@@ -268,8 +268,8 @@ nav{
 }
 /* card */
 .card1 {
-    width: 285px;
-    height: 285px;
+    width: 200px;
+    height: 200px;
     background: var(--background);
     border-radius: 20px;
     box-shadow: 0px 0px 15px -3px #5c5b5b inset;
@@ -282,15 +282,15 @@ nav{
 }
 
 .img {
-    height: 170px;
-    width: 200px;
-    position: absolute;
+    height: 70px;
+    width: 100px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
     transition: 0.2s ease-in-out;
     z-index: 1;
 }
-.img>svg{
-    height: 50px;
-}
+
 .textBox {
     opacity: 0;
     display: flex;
