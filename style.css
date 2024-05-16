@@ -420,3 +420,27 @@ nav{
 .content .btn:active {
     box-shadow: none;
 }
+
+/* project */
+.project-list{
+    list-style-type: none;
+}
+
+.project-content{
+    align-items: flex-end;
+    display: grid;
+    justify-items: end;;
+}
+.project-desc{
+    background-color: var(--secondary);
+}
+.tech-ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.tech-li{
+    float: left;
+    margin-left: 1rem;
+}
